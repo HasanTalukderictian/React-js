@@ -1,6 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+ const number = 5566;
+ const teacher = {name:'Fahim Ahamed', job: 'Dancer'}
+ const sciencest = {name:'Murad ', job: 'singer'}
+
+ const singerstyle ={
+  color:'red',
+  backgroundColor: 'white',
+
+ }
+
 function App() {
   return (
     <div className="App">
@@ -9,6 +20,11 @@ function App() {
         <h1>JSX</h1>
          <div className="container">
           <h3>Hello Dude, Hello React...</h3>
+         </div>
+         <div className="music">
+          <p style={singerstyle}>Name: {number} </p>
+          <p style={singerstyle}>Name:{teacher.name}  {teacher.job}</p>
+          <p style={{ color:'blue',backgroundColor:'red'}}>Name:{sciencest.name} {sciencest.job}</p>
          </div>
         <p>
           Edit <code>src/App.js</code> and save to reload.
